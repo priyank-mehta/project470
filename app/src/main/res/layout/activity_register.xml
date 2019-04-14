@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20sp"
+    android:layout_marginBottom="20sp"
+    android:layout_marginLeft="20sp"
+    android:layout_marginRight="20sp">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        android:layout_marginTop="20sp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/img"
+        android:scaleType="centerInside" />
+
+
+    <Button
+        android:id="@+id/photo_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150sp"
+        android:text="@string/upload_btn"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:ems="10"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".60"
+            android:autofillHints="@string/user_name"
+            android:ems="10"
+            android:hint="@string/user_name"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dobLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="300sp"
+        >
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:ems="10"
+            android:text="DOB" />
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".60"
+            android:autofillHints="@string/dob"
+            android:ems="10"
+            android:hint="@string/dob"
+            android:inputType="date" />
+
+    </LinearLayout>
+
+    <DatePicker
+        android:id="@+id/datepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_above="@id/dobLayout"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="350sp"
+        >
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:ems="10"
+            android:text="Experience" />
+
+        <EditText
+            android:id="@+id/exp"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".60"
+            android:autofillHints="@string/exp"
+            android:ems="10"
+            android:hint="@string/exp"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450sp"
+        android:text="@string/submit_info"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
+
