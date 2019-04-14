@@ -118,7 +118,7 @@ public class RegisterActivity extends AppCompatActivity  {
                                     Log.w(TAG, "Error adding document", e);
                                 }
                             });
-
+                    startActivity(new Intent(RegisterActivity.this, SmartResume.class));
                 } catch (Exception e) {
                     Log.e("Exception", "File write failed: " + e.toString());
                 }
