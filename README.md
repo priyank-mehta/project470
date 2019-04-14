@@ -6,9 +6,10 @@ This app demonstrates use of following android/ firebase features:
 1. Firebase Auth using Phone (OTP)
 2. GPS Location and Geocoder API on Android
 3. Camera usage
-4. CloudFireStore RealTime Database for NOSQL collections based userInfo Storage
-5. FireStorage for uploading user profile images
-6. Firebase Functions to generate smart resume
+4. Settings Activity (Register Screen to set language preference)
+5. CloudFireStore RealTime Database for NOSQL collections based userInfo Storage
+6. FireStorage for uploading user profile images
+7. Firebase Functions to generate smart resume
 
 Smart Resume not loading cause of free plan on Firebase Functions
 Error: Billing account not configured. External network is not accessible and quotas are severely limited. Configure billing account to remove these restrictions
