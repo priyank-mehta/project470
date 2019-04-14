@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 SigninWithPhone(credential);
             }
         });
-        startActivity(new Intent(MainActivity.this, RegisterActivity.class));
+        startActivity(new Intent(MainActivity.this, SmartResume.class));
     }
 
     private void writeToFile(String data, Context context) {
