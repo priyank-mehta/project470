@@ -9,3 +9,9 @@ This app demonstrates use of following android/ firebase features:
 4. CloudFireStore RealTime Database for NOSQL collections based userInfo Storage
 5. FireStorage for uploading user profile images
 6. Firebase Functions to generate smart resume
+
+Smart Resume not loading cause of free plan on Firebase Functions
+Error: Billing account not configured. External network is not accessible and quotas are severely limited. Configure billing account to remove these restrictions
+
+Image generated using functions api call (before deploying)
+https://hcti.io/v1/image/c848f670-fabb-4a03-b4fe-d80032ace220
